@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return jsonify({'text': 'Hello!'})
 
-@app.route('/app/add', methods=['POST'])
+@app.route('/api/add', methods=['POST'])
 def add():
     data = request.get_json()
     num1 = data.get('num1')
